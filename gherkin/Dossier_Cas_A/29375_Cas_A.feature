@@ -1,0 +1,8 @@
+# language: fr
+Fonctionnalité: Cas A
+  
+  
+  Scénario: cas 
+    Soit un cas a
+    Quand cas b
+    Alors c'est cas c 
