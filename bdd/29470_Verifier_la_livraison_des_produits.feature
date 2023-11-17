@@ -3,7 +3,7 @@ Característica: Vérifier la livraison des produits
 
 	Esquema del escenario: Vérifier la livraison des produits
 		Dado la machine est en marche
-		Pero mon solde est au moins de <prix>
+		Y mon solde est au moins de <prix>
 		Cuando je sélectionne le <produit>
 		Entonces la machine me sert un <produit> et mon compte est débité de <prix>
 
