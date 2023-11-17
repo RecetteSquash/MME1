@@ -1,23 +1,23 @@
-# language: fr
-Fonctionnalité: Vérifier la livraison des produits
+# language: de
+Funktionalität: Vérifier la livraison des produits
 
-	Plan du scénario: Vérifier la livraison des produits
-		Étant donné que la machine est en marche
-		Et mon solde est au moins de <prix>
-		Quand je sélectionne le <produit>
-		Alors la machine me sert un <produit> et mon compte est débité de <prix>
+	Szenariogrundriss: Vérifier la livraison des produits
+		Gegeben la machine est en marche
+		Und mon solde est au moins de <prix>
+		Wenn je sélectionne le <produit>
+		Dann la machine me sert un <produit> et mon compte est débité de <prix>
 
 		@JDD_Cappûcînô
-		Exemples:
+		Beispiele:
 		| prix | produit |
 		| 1 | "cappûcînô" |
 
 		@JDD_Expresso
-		Exemples:
+		Beispiele:
 		| prix | produit |
 		| 0,40 | "expresso" |
 
 		@JDD_lungo
-		Exemples:
+		Beispiele:
 		| prix | produit |
 		| 0.50 | "lungo" |
