@@ -1,23 +1,23 @@
-# language: de
-Funktionalität: Vérifier la livraison des produits
+# language: es
+Característica: Vérifier la livraison des produits
 
-	Szenariogrundriss: Vérifier la livraison des produits
-		Geben la machine est en marche
-		Gegeben mon solde est au moins de <prix>
-		Wenn je sélectionne le <produit>
-		Dann la machine me sert un <produit> et mon compte est débité de <prix>
+	Esquema del escenario: Vérifier la livraison des produits
+		Dado la machine est en marche
+		Pero mon solde est au moins de <prix>
+		Cuando je sélectionne le <produit>
+		Entonces la machine me sert un <produit> et mon compte est débité de <prix>
 
 		@JDD_Cappûcînô
-		Beispiele:
+		Ejemplos:
 		| prix | produit |
 		| 1 | "cappûcînô" |
 
 		@JDD_Expresso
-		Beispiele:
+		Ejemplos:
 		| prix | produit |
 		| 0,40 | "expresso" |
 
 		@JDD_lungo
-		Beispiele:
+		Ejemplos:
 		| prix | produit |
 		| 0.50 | "lungo" |
