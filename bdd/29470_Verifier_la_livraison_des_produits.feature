@@ -2,7 +2,7 @@
 Funktionalität: Vérifier la livraison des produits
 
 	Szenariogrundriss: Vérifier la livraison des produits
-		Gegeben la machine est en marche
+		Geben la machine est en marche
 		Gegeben mon solde est au moins de <prix>
 		Wenn je sélectionne le <produit>
 		Dann la machine me sert un <produit> et mon compte est débité de <prix>
