@@ -15,7 +15,7 @@ Feature: Vérifier la livraison des produits
 		@JDD_Expresso
 		Examples:
 		| prix | produit |
-		| 0.40 | "expresso" |
+		| 0,40 | "expresso" |
 
 		@JDD_lungo
 		Examples:
