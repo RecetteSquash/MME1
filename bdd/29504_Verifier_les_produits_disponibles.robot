@@ -12,11 +12,14 @@ Test Teardown    Test Teardown
 Vérifier les produits disponibles
     [Documentation]    Vérifier les produits disponibles
 
-    &{docstrings} =    Retrieve Docstrings
-
-    Given la machine est en marche "${docstrings}[docstring_1]"
-    When je liste les produits disponibles "${docstrings}[docstring_2]"
-    Then je constate que tous les produits sont disponibles "${docstrings}[docstring_3]"
+    Given la machine est en marche
+    # commentaire 1
+    # commentaire 2
+    When je liste les produits disponibles
+    # commentaire du commentaire 
+    Then je constate que tous les produits sont disponibles
+    # commentaire final 
+    # ah non commentaire final 
 
 
 *** Keywords ***
@@ -49,27 +52,3 @@ Test Teardown
     IF    $TEST_TEARDOWN_VALUE is not None
         Run Keyword    ${TEST_TEARDOWN}
     END
-
-Retrieve Docstrings
-    [Documentation]    Retrieves Squash TM's docstrings and stores them in a dictionary.
-    ...
-    ...                For instance, two docstrings have been defined in Squash TM,
-    ...                the first one containing the string
-    ...                "I am the
-    ...                FIRST    docstring",
-    ...                the second one containing the string "I am the second docstring"
-    ...
-    ...                First, this keyword retrieves values and converts them to an inline string :
-    ...                ${docstring_1} =    Set Variable    I am the\nFIRST\tdocstring"
-    ...
-    ...                Then, this keyword stores the docstrings into the &{docstrings} dictionary
-    ...                with each docstring name as key, and each docstring value as value :
-    ...                ${docstrings} =    Create Dictionary    docstring_1=${docstring_1}    docstring_2=${docstring_2}
-
-    ${docstring_1} =    Set Variable    docstriiiiing 
-    ${docstring_2} =    Set Variable    Ceci est une docstring \ncela en est une autre 
-    ${docstring_3} =    Set Variable    doc doc \n
-
-    &{docstrings} =    Create Dictionary    docstring_1=${docstring_1}    docstring_2=${docstring_2}    docstring_3=${docstring_3}
-
-    RETURN    &{docstrings}
