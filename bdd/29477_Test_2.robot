@@ -12,8 +12,8 @@ Test Teardown    Test Teardown
 Test 2
     [Documentation]    Test 2
 
-    Given chat
-    Then chien
+    Given tableau
+    Then maîtresse
 
 
 *** Keywords ***

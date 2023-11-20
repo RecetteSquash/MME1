@@ -12,8 +12,9 @@ Test Teardown    Test Teardown
 Test 3
     [Documentation]    Test 3
 
-    Given poisson
-    Given oiseau
+    Given eau
+    Given terre
+    Then boue
 
 
 *** Keywords ***

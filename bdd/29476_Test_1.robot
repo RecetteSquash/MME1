@@ -12,8 +12,9 @@ Test Teardown    Test Teardown
 Test 1
     [Documentation]    Test 1
 
-    Given café
-    Then thé
+    Given journée
+    Then soirée
+    And dormir
 
 
 *** Keywords ***
