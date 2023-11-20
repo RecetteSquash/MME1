@@ -14,9 +14,9 @@ Vérifier les produits disponibles
 
     &{docstrings} =    Retrieve Docstrings
 
-    Given la machine est en marche
-    When je liste les produits disponibles "${docstrings}[docstring_1]"
-    Then je constate que tous les produits sont disponibles
+    Given la machine est en marche "${docstrings}[docstring_1]"
+    When je liste les produits disponibles "${docstrings}[docstring_2]"
+    Then je constate que tous les produits sont disponibles "${docstrings}[docstring_3]"
 
 
 *** Keywords ***
@@ -66,8 +66,10 @@ Retrieve Docstrings
     ...                with each docstring name as key, and each docstring value as value :
     ...                ${docstrings} =    Create Dictionary    docstring_1=${docstring_1}    docstring_2=${docstring_2}
 
-    ${docstring_1} =    Set Variable    Ceci est une docstring \ncela en est une autre 
+    ${docstring_1} =    Set Variable    docstriiiiing 
+    ${docstring_2} =    Set Variable    Ceci est une docstring \ncela en est une autre 
+    ${docstring_3} =    Set Variable    doc doc \n
 
-    &{docstrings} =    Create Dictionary    docstring_1=${docstring_1}
+    &{docstrings} =    Create Dictionary    docstring_1=${docstring_1}    docstring_2=${docstring_2}    docstring_3=${docstring_3}
 
     RETURN    &{docstrings}
