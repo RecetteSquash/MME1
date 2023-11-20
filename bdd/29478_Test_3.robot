@@ -12,10 +12,6 @@ Test Teardown    Test Teardown
 Test 3
     [Documentation]    Test 3
 
-    Given eau
-    Given terre
-    Then boue
-
 
 *** Keywords ***
 Test Setup

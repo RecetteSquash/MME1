@@ -12,10 +12,6 @@ Test Teardown    Test Teardown
 Test 1
     [Documentation]    Test 1
 
-    Given journée
-    Then soirée
-    And dormir
-
 
 *** Keywords ***
 Test Setup
