@@ -17,7 +17,7 @@ Vérifier les produits disponibles
 
     Given la machine est en marche "${docstrings}[docstring_1]"
     When je liste les produits disponibles
-    # Seuls les produits de la catégorie Cafés sont vérifiés dans ce test
+    # Seuls les produits de la catégorie Café sont vérifiés dans ce test
     Then je constate que tous les produits sont disponibles "${datatables}[datatable_1]"
 
 
