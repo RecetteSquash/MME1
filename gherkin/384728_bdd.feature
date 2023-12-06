@@ -2,6 +2,4 @@
 Feature: bdd
 
 	Scenario: bdd
-		Given i am
-		Given buooo
-		Then danse
+		Given mon solde est de "0.40" "€"
